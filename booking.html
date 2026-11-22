@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <title>Boka bord - Kafe hörnet></title>
+  </head>
+  <body>
+    <header>
+      <p>Kafé Hörnet</p>
+
+      <nav>
+        <a href="index.html">Start</a>
+        <a href="menu.html">Meny</a>
+        <a href="booking.html" aria-current="page">Boka bord</a>
+      </nav>
+    </header>
+    <h1>Boka bord</h1>
+    <p>
+      Fyll i formuläret så bekräftar vi via e-post inom en timme under öppettid.
+      Sällskap över 8 personer: ring oss.
+    </p>
+    <form>
+      <label for="namn">Namn</label>
+      <input type="text" id="namn" name="namn" required />
+
+      <label for="epost">E-post</label>
+      <input type="email" id="epost" name="epost" required />
+      <input type="date" id="datum" name="datum" required />
+
+      <label for="tid">Tid</label>
+      <select id="tid" name="tid">
+        <option value="09:00">09:00</option>
+        <option value="10:00">10:00</option>
+        <option value="11:00">11:00</option>
+        <option value="12:00">12:00</option>
+        <option value="13:00">13:00</option>
+        <option value="14:00">14:00</option>
+        <option value="15:00">15:00</option>
+        <option value="16:00">16:00</option>
+        <option value="17:00">17:00</option>
+      </select>
+
+      <label for="antal">Antal personer</label>
+      <input type="number" id="antal" name="antal" min="1" max="8" required />
+      <label for="meddelande">Meddelande (frivilligt)</label>
+      <textarea id="meddelande" name="meddelande"></textarea>
+
+      <button type="submit">Skicka bokning</button>
+    </form>
+    <section>
+      <h2>Bra att veta</h2>
+
+      <ul>
+        <li>Bordet hålls i 15 minuter efter bokad tid.</li>
+        <li>Vi har barnstolar och plats för barnvagn.</li>
+        <li>Hundar är välkomna på uteserveringen.</li>
+      </ul>
+    </section>
+    <footer>
+      <section>
+        <h2>Hitta hit</h2>
+        <p>Hörngatan 12, 118 65 Stockholm.</p>
+        <p>Två minuter från Mariatorgets tunnelbana.</p>
+      </section>
+
+      <section>
+        <h2>Öppettider</h2>
+        <p>Måndag–fredag 07.30–18.00</p>
+        <p>Lördag–söndag 09.00–17.00</p>
+      </section>
+
+      <section>
+        <h2>Kontakt</h2>
+        <p>E-post: hej@kafehornet.example</p>
+        <p>Telefon: 08-123 456 78</p>
+      </section>
+
+      <p>© Kafé Hörnet 2026</p>
+    </footer>
+  </body>
+</html>
